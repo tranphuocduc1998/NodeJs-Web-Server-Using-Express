@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Trang tìm kiếm
+    body
+        h2 Sử dụng form để tìm kiếm giá trị
+        form(action="/Search", method="get")
+            input(type="text", name="contentSearch")
+            button  Kiểm tra
+        ul
+        each item in listItem
+            li= item.value
