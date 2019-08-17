@@ -4,7 +4,7 @@
 
 ## Lesson(1): Install Express
 1. Install Express: **$** `npm install express --save`
-2. Practice in file ~~Lesson(1)-install-express~~.
+2. Practice in folder ~~Lesson(1)-install-express~~.
 
 ## Lesson(2): Template Engines
 1. Introduction to Template Engines:
@@ -21,5 +21,10 @@
 2. Create action for Form in TestSearch.pug, using search the values in List
 3. Practice in folder ~~Lesson(3)-Query-Paramaters~~.
 
+## Lesson(4): Post Method
+1. Install bodyParser: **$** `npm install body-parser --save`
+2. Using the files in lessin (3) again.
+3. Create a view AddValue.pug and using [Post](http://expressjs.com/en/5x/api.html#express) `Method` submit values and save.
+4. Practice in folder ~~Lesson(4)-Post-Method~~
 
 # Update Content of Git
