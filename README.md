@@ -27,4 +27,10 @@
 3. Create a view AddValue.pug and using [Post](http://expressjs.com/en/5x/api.html#express) `Method` submit values and save.
 4. Practice in folder ~~Lesson(4)-Post-Method~~
 
+## Lesson(5): Install Nodemon for Dev
+1. Install nodemon: **$** `npm install --save-dev nodemon`
+2. In package.json, additional `"start": "nodemon"` at `"scripts":` and repair `"main": "Lesson(5)-Use-Npm-Nodemon/index.js",`
+3. Listening to port: `npm start` 
+4. Practice in folder ~~Lesson(5)-Use-Npm-Nodemon~~
+
 # Update Content of Git
