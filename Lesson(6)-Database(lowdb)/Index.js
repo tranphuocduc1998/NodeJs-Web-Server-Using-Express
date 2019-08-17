@@ -1,35 +1,33 @@
 const express = require('Express')
 const pug = require('pug')
 const bodyParser = require('body-parser')
+const low = require('lowdb')
+const FileSync = require('lowdb/adapters/FileSync')
 
+const adapters = new FileSync('Lesson(6)-Database(lowdb)/db.json')
+const db = low(adapters)
 const app = express()
-const port = 8080
-
-const listed = [
-    { id: 1, value: 'Duc' },
-    { id: 2, value: 'Tuan' },
-    { id: 3, value: 'Thanh' },
-    { id: 4, value: 'Tam' },
-    { id: 5, value: 'Hiep' },
-    { id: 6, value: 'Vui' },
-    { id: 7, value: 'Loi' }
-]
+const port = 9080
 
 app.set('view engine', 'pug')
-app.set('views', './Lesson(5)-Use-Npm-Nodemon/views')
+app.set('views', './Lesson(6)-Database(lowdb)/views')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded())
 
+// Set some defaults
+db.defaults({ listed: [] }).write()
+
+
 app.get('/', function (request, response) {
     response.render('TestSearch', {
-        listItem: listed
+        listItem: db.get('listed').value()
     })
 })
 
 app.get('/Search', function (request, response) {
     const contentSearch = request.query.contentSearch
-    const listSearched = listed.filter(function (item) {
+    const listSearched = db.get('listed').value().filter(function (item) {
         return item.value.toLowerCase().indexOf(contentSearch.toLowerCase()) !== -1
     })
     response.render('TestSearch', {
@@ -38,13 +36,14 @@ app.get('/Search', function (request, response) {
 })
 
 app.get('/Additional', function (request, response) {
+    console.log(db.get('listed').value().length )
     response.render('AddValues', {
-        idList: (listed.length + 1)
+        idList: (db.get('listed').value().length + 1)
     })
 })
 
 app.post('/Additional', function (request, response) {
-    listed.push(request.body)
+    db.get('listed').push(request.body).write()
     response.redirect('/')
 })
 

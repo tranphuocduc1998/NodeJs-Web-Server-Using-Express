@@ -29,8 +29,16 @@
 
 ## Lesson(5): Install Nodemon for Dev
 1. Install nodemon: **$** `npm install --save-dev nodemon`
-2. In package.json, additional `"start": "nodemon"` at `"scripts":` and repair `"main": "Lesson(5)-Use-Npm-Nodemon/index.js",`
-3. Listening to port: `npm start` 
-4. Practice in folder ~~Lesson(5)-Use-Npm-Nodemon~~
+2. In package.json, additional `"start": "nodemon"` at `"scripts":` and edit `"main": "Lesson(5)-Use-Npm-Nodemon/index.js",`
+3. In index.js, edit `app.set('views', './Lesson(6)-Database(lowdb)/views')`
+4. Listening to port: **$** `npm start` 
+5. Practice in folder ~~Lesson(5)-Use-Npm-Nodemon~~
+
+## Lesson(6): Using Database(Lowdb) in project
+1. Install lowdb: **$** `npm install lowdb --save`
+2. In package.json, edit `"main": "Lesson(6)-Database(lowdb)/index.js",`
+3. In index.js, edit `app.set('views', './Lesson(6)-Database(lowdb)/views')`
+4. Listening to port: **$** `npm start`
+5. Practice in folder ~~Lesson(6)-Database(lowdb)~~
 
 # Update Content of Git
