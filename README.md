@@ -41,4 +41,12 @@
 4. Listening to port: **$** `npm start`
 5. Practice in folder ~~Lesson(6)-Database(lowdb)~~
 
+## Lesson(7): View details
+1. Reuse Lesson 6 and additional ViewDetails.pug
+2. Install shortid: **$** `npm install shortid --save`, Using Auto create id
+2. In package.json, edit `"main": "Lesson(7)-View-Details/index.js",`
+3. In index.js, edit `app.set('views', './Lesson(7)-View-Details/views')` and `FileSync('Lesson(7)-View-Details/db.json')`
+4. Listening to port: **$** `npm start`
+5. Practice in folder ~~Lesson(7)-View-Details~~
+
 # Update Content of Git
