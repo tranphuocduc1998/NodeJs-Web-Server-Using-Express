@@ -56,4 +56,11 @@
 4. Listening to port: **$** `npm start`
 5. Practice in folder ~~Lesson(8)-Express-Router~~
 
+## Lession(9): Structure MVC Model
+1. Reuse Lesson 8.
+2. In package.json, edit `"main": "Lesson(9)-Structure-MVC-Model/index.js",`
+3. In index.js, edit `app.set('views', './Lesson(9)-Structure-MVC-Model/views')` and `FileSync('Lesson(9)-Structure-MVC-Model/db.json')`
+4. Listening to port: **$** `npm start`
+5. Practice in folder ~~Lesson(9)-Structure-MVC-Model~~
+
 # Update Content of Git
