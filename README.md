@@ -44,9 +44,16 @@
 ## Lesson(7): View details
 1. Reuse Lesson 6 and additional ViewDetails.pug
 2. Install shortid: **$** `npm install shortid --save`, Using Auto create id
-2. In package.json, edit `"main": "Lesson(7)-View-Details/index.js",`
-3. In index.js, edit `app.set('views', './Lesson(7)-View-Details/views')` and `FileSync('Lesson(7)-View-Details/db.json')`
+3. In package.json, edit `"main": "Lesson(7)-View-Details/index.js",`
+4. In index.js, edit `app.set('views', './Lesson(7)-View-Details/views')` and `FileSync('Lesson(7)-View-Details/db.json')`
+5. Listening to port: **$** `npm start`
+6. Practice in folder ~~Lesson(7)-View-Details~~
+
+## Lession(8): Express Router
+1. Reuse Lesson 7.
+2. In package.json, edit `"main": "Lesson(8)-Express-Router/index.js",`
+3. In index.js, edit `app.set('views', './Lesson(8)-Express-Router/views')` and `FileSync('Lesson(8)-Express-Router/db.json')`
 4. Listening to port: **$** `npm start`
-5. Practice in folder ~~Lesson(7)-View-Details~~
+5. Practice in folder ~~Lesson(8)-Express-Router~~
 
 # Update Content of Git
