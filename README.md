@@ -83,16 +83,22 @@
 ## Lesson(12): Server-side Validation
 1. Reuse Lesson 10 and Lesson 11
 2. In package.json, edit `"main": "Lesson(12)-Server-side-Validation/index.js",`
-3. In index.js, edit `app.set('views', './Lesson(12)-Server-side-Validation/views')`
-4. In db.js, edit `FileSync('Lesson(12)-Server-side-Validation/db.json')` and `app.use(express.static('Lesson(12)-Server-side-Validation/Assets'))`
+3. In index.js, edit `app.set('views', './Lesson(12)-Server-side-Validation/views')` and `app.use(express.static('Lesson(12)-Server-side-Validation/Assets'))`
+4. In db.js, edit `FileSync('Lesson(12)-Server-side-Validation/db.json')`
 5. Listening to port: **$** `npm start`
 6. Practice in folder ~~Lesson(12)-Server-side-Validation~~
 
 ## Lesson(13): Middleware
 1. Reuse Lesson 12
-6. Practice in folder ~~Lesson(12)-Server-side-Validation~~
+2. Practice in folder ~~Lesson(12)-Server-side-Validation~~
 
-
-
+## Lesson(14): Use Cookie and Create Page Login
+1. Reuse Lesson 13
+2. In package.json, edit `"main": "Lesson(13)-Page-Login/index.js",`
+3. In index.js, edit `app.set('views', './Lesson(13)-Page-Login/views')` and `app.use(express.static('Lesson(13)-Page-Login/Assets'))`
+4. In db.js, edit `FileSync('Lesson(13)-Page-Login/db.json')`
+5. Listening to port: **$** `npm start`
+6. Install cookie-parser: **$** `npm install cookie-parser --save`
+7. Practice in folder ~~Lesson(13)-Page-Login~~
 
 # Update Content of Git

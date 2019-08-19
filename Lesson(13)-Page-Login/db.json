@@ -1,0 +1,26 @@
+{
+  "infoContact": [
+    {
+      "displayname": "Nguyễn Tấn Lợi",
+      "age": "22",
+      "id": "XmXrP8u1N"
+    },
+    {
+      "displayname": "Lê Anh Tuấn",
+      "age": "21",
+      "id": "fjISJg9w3"
+    },
+    {
+      "displayname": "Đoàn Trung Thành",
+      "age": "25",
+      "id": "uTV84zKA2"
+    },
+    {
+      "displayname": "Trần Phước Đức",
+      "age": "18",
+      "account": "ductp",
+      "password": "123456",
+      "id": "z0Z7vEtmX"
+    }
+  ]
+}
