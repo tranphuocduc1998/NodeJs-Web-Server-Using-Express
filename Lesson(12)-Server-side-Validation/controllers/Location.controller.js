@@ -22,21 +22,9 @@ module.exports.additional = function (request, response) {
 }
 
 module.exports.postAdditional = function (request, response) {
-    const errors = []
-    if(!request.body.displayname){
-        errors.push('Bạn chưa nhập tên!')
-    }
-    if(!request.body.age){
-        errors.push('Bạn chưa nhập tuổi!')
-    }
-    
-    if(errors.length > 0){
-        response.render('AddValues',{
-            errors: errors,
-            value: request.body
-        })
-        return
-    }
+    //nhận lại dự liệu bên validate
+    // console.log(response.locals);
+
     request.body.id = shortid.generate();
     db.get('infoContact').push(request.body).write()
     response.redirect('/')
