@@ -49,18 +49,30 @@
 5. Listening to port: **$** `npm start`
 6. Practice in folder ~~Lesson(7)-View-Details~~
 
-## Lession(8): Express Router
+## Lesson(8): Express Router
 1. Reuse Lesson 7.
 2. In package.json, edit `"main": "Lesson(8)-Express-Router/index.js",`
-3. In index.js, edit `app.set('views', './Lesson(8)-Express-Router/views')` and `FileSync('Lesson(8)-Express-Router/db.json')`
-4. Listening to port: **$** `npm start`
-5. Practice in folder ~~Lesson(8)-Express-Router~~
+3. In index.js, edit `app.set('views', './Lesson(8)-Express-Router/views')`
+4. In db.js, edit `FileSync('Lesson(8)-Express-Router/db.json')`
+5. Listening to port: **$** `npm start`
+6. Practice in folder ~~Lesson(8)-Express-Router~~
 
-## Lession(9): Structure MVC Model
+## Lesson(9): Structure MVC Model
 1. Reuse Lesson 8.
 2. In package.json, edit `"main": "Lesson(9)-Structure-MVC-Model/index.js",`
-3. In index.js, edit `app.set('views', './Lesson(9)-Structure-MVC-Model/views')` and `FileSync('Lesson(9)-Structure-MVC-Model/db.json')`
-4. Listening to port: **$** `npm start`
-5. Practice in folder ~~Lesson(9)-Structure-MVC-Model~~
+3. In index.js, edit `app.set('views', './Lesson(9)-Structure-MVC-Model/views')`
+4. In db.js, edit `FileSync('Lesson(9)-Structure-MVC-Model/db.json')`
+5. Listening to port: **$** `npm start`
+6. Practice in folder ~~Lesson(9)-Structure-MVC-Model~~
+
+## Lesson(10): Template Layout
+1. Reuse Lesson 9
+2. Additional Bootstrap 4
+3. In package.json, edit `"main": "Lesson(10)-Template-Layout/index.js",`
+4. In index.js, edit `app.set('views', './Lesson(10)-Template-Layout/views')` 
+5. In db.js, edit `FileSync('Lesson(10)-Template-Layout/db.json')`
+6. Listening to port: **$** `npm start`
+7. Practice in folder ~~Lesson(10)-Template-Layout~~
+
 
 # Update Content of Git
