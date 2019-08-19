@@ -74,5 +74,12 @@
 6. Listening to port: **$** `npm start`
 7. Practice in folder ~~Lesson(10)-Template-Layout~~
 
+## Lesson(11): Static Files
+1. In package.json, edit `"main": "Lesson(11)-Static-Files/index.js",`
+2. In index.js, edit `app.set('views', './Lesson(11)-Static-Files/views')`
+3. Listening to port: **$** `npm start`
+4. Practice in folder ~~Lesson(11)-Static-Files~~
+
+
 
 # Update Content of Git
