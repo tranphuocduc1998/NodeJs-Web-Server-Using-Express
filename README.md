@@ -80,6 +80,13 @@
 3. Listening to port: **$** `npm start`
 4. Practice in folder ~~Lesson(11)-Static-Files~~
 
+## Lesson(12): Server-side Validation
+1. Reuse Lesson 10 and Lesson 11
+2. In package.json, edit `"main": "Lesson(12)-Server-side-Validation/index.js",`
+3. In index.js, edit `app.set('views', './Lesson(12)-Server-side-Validation/views')`
+4. In db.js, edit `FileSync('Lesson(12)-Server-side-Validation/db.json')` and `app.use(express.static('Lesson(12)-Server-side-Validation/Assets'))`
+5. Listening to port: **$** `npm start`
+6. Practice in folder ~~Lesson(12)-Server-side-Validation~~
 
 
 # Update Content of Git
