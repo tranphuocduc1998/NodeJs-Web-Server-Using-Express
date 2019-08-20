@@ -102,9 +102,11 @@
 7. Practice in folder ~~Lesson(13)-Page-Login~~
 
 ## Lesson(15): Convert md5
-1. Reuse `folder(13)-Page-Login`
+1. Reuse Lesson 14 `folder(13)-Page-Login`
 2. Install md5: **$** `npm install md5 --save`
 3. Practice in folder ~~Lesson(13)-Page-Login~~
 
-
+## Lesson(16): Signed Cookies
+1. Reuse Lesson 15 `folder(13)-Page-Login`
+2. Practice in folder ~~Lesson(13)-Page-Login~~
 # Update Content of Git

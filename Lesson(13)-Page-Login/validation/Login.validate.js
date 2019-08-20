@@ -32,7 +32,7 @@ module.exports.postLogin = function (request, response, next) {
         return
     }
 
-    response.cookie('AccountId', id.id)
+    response.cookie('AccountId', id.id, {signed: true})
 
     next()
 }
