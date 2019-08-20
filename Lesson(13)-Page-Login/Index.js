@@ -1,3 +1,5 @@
+require('dotenv').config()
+console.log(process.env.SESSION_SECRECT)
 const express = require('Express')
 const pug = require('pug')
 const bodyParser = require('body-parser')
@@ -18,7 +20,7 @@ app.use(express.static('Lesson(13)-Page-Login/Assets'))
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded())
-app.use(cookieParser('Test'))
+app.use(cookieParser(process.env.SESSION_SECRECT))
 
 app.use('',router)
 app.use('/Login/', routerLogin)

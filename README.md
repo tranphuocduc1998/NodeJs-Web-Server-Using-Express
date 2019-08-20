@@ -109,4 +109,10 @@
 ## Lesson(16): Signed Cookies
 1. Reuse Lesson 15 `folder(13)-Page-Login`
 2. Practice in folder ~~Lesson(13)-Page-Login~~
+
+## Lesson(17): Environment Variables
+1. Reuse Lesson 16 `folder(13)-Page-Login`
+2. Instal dotenv: **$** `npm install dotenv --save`
+3. Practice in folder ~~Lesson(13)-Page-Login~~
+
 # Update Content of Git
