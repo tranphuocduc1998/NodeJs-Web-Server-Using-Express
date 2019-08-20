@@ -115,4 +115,9 @@
 2. Instal dotenv: **$** `npm install dotenv --save`
 3. Practice in folder ~~Lesson(13)-Page-Login~~
 
+## Leeson(18): Debug nodejs
+1. Reuse Lesson 16 `folder(13)-Page-Login`
+2. In package.json, edit `"start": "nodemon --inspect",`
+3. Opent browser-> Open dedicated dev
+4. Practice in folder ~~Lesson(13)-Page-Login~~
 # Update Content of Git
