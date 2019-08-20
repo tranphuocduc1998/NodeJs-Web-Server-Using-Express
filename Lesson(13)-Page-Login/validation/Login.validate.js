@@ -1,3 +1,5 @@
+const md5 = require('md5')
+
 const db = require('../db')
 
 module.exports.postLogin = function (request, response, next) {
@@ -17,7 +19,9 @@ module.exports.postLogin = function (request, response, next) {
         return
     }
 
-    const id = db.get('infoContact').find({ account: request.body.account, password: request.body.password }).value()
+    const hashaPass = md5(request.body.password)
+
+    const id = db.get('infoContact').find({ account: request.body.account, password: hashaPass }).value()
 
     if (!id) {
         errors.push('không có tài khoản này')

@@ -101,4 +101,10 @@
 6. Install cookie-parser: **$** `npm install cookie-parser --save`
 7. Practice in folder ~~Lesson(13)-Page-Login~~
 
+## Lesson(15): Convert md5
+1. Reuse `folder(13)-Page-Login`
+2. Install md5: **$** `npm install md5 --save`
+3. Practice in folder ~~Lesson(13)-Page-Login~~
+
+
 # Update Content of Git

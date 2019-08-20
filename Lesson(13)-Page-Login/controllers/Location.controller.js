@@ -1,3 +1,4 @@
+const md5 = require('md5')
 const db = require('../db')
 const shortid = require('shortid')
 
@@ -24,8 +25,9 @@ module.exports.additional = function (request, response) {
 module.exports.postAdditional = function (request, response) {
     //nhận lại dự liệu bên validate
     // console.log(response.locals);
-
     request.body.id = shortid.generate();
+    const hashPass = md5(request.body.password)
+    request.body.password = hashPass
     db.get('infoContact').push(request.body).write()
     response.redirect('/')
 }
