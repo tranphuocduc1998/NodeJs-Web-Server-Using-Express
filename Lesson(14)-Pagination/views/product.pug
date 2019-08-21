@@ -1,0 +1,27 @@
+extends ./Layout/Template.pug
+
+block body
+  each item in products
+    .col-md-3
+      .card(style='width: 18rem;')
+        img.card-img-top(src=item.image, alt='...')
+        .card-body
+          h5.card-title=item.first_name
+          p.card-text=item.description
+          a.btn.btn-primary(href='#') Go somewhere
+  
+  nav(aria-label='Page navigation example')
+    ul.pagination
+      - if (pageChossed>1)
+        li.page-item
+          a.page-link(href='?page='+(pageChossed-1)) Previous
+      - for (let index = 1; index <= sumPage; index++)
+        - if (index === pageChossed)
+          li.page-item
+            a.blockPage.page-link(href='#')=index
+        - else
+          li.page-item
+            a.page-link(href='?page='+index)=index
+      - if (pageChossed<sumPage)
+        li.page-item
+          a.page-link(href='?page='+(pageChossed+1)) Next

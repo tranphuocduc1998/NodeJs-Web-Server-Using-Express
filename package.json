@@ -2,7 +2,7 @@
   "name": "nodejs-web-server-using-express",
   "version": "1.0.0",
   "description": "***Begin Course Nodejs to Express***\r * Create: `npm init`",
-  "main": "Lesson(13)-Page-Login/index.js",
+  "main": "Lesson(14)-Pagination/index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
@@ -17,7 +17,7 @@
     "nodemon": "^1.19.1"
   },
   "scripts": {
-    "start": "nodemon --inspect",
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -120,4 +120,13 @@
 2. In package.json, edit `"start": "nodemon --inspect",`
 3. Opent browser-> Open dedicated dev
 4. Practice in folder ~~Lesson(13)-Page-Login~~
+
+## Lesson(19): Pagination (Phân trang)
+1. Items = array.slice(begin, end), `begin = (n-1) * x` and `end = n * x`
+2. Create folder `Lesson(14)-Pagination`
+3. In package.json, edit `"main": "Lesson(14)-Pagination/index.js",`
+4. In index.js, edit `app.set('views', './Lesson(14)-Pagination/views')` and `app.use(express.static('Lesson(14)-Pagination/Assets'))`
+5. In db.js, edit `FileSync('Lesson(14)-Pagination/db.json')`
+6. Listening to port: **$** `npm start`
+7. Practice in folder ~~Lesson(14)-Pagination~~
 # Update Content of Git
