@@ -129,4 +129,14 @@
 5. In db.js, edit `FileSync('Lesson(14)-Pagination/db.json')`
 6. Listening to port: **$** `npm start`
 7. Practice in folder ~~Lesson(14)-Pagination~~
+
+## Lesson(20): File Upload
+1. Create folder `Lesson(15)-File-Upload`
+2. Install multer: **$** `npm install multer --save`
+3. In package.json, edit `"main": "Lesson(15)-File-Upload/index.js",`
+4. In index.js, edit `app.set('views', './Lesson(15)-File-Upload/views')` and `app.use(express.static('Lesson(15)-File-Upload/Assets'))`
+5. In db.js, edit `FileSync('Lesson(15)-File-Upload/db.json')`
+6. Listening to port: **$** `npm start`
+7. Practice in folder ~~Lesson(15)-File-Upload~~
+
 # Update Content of Git

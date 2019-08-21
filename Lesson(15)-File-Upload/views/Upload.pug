@@ -1,0 +1,10 @@
+extends ./Layout/Template.pug
+
+block body
+  h1 Upload
+
+  form(action="/", method="post", enctype="multipart/form-data")
+    .form-group
+      label(for="avatar")
+      input#avatar.form-control(name="avatar", type="file")
+    button.btn.btn-danger Upload
