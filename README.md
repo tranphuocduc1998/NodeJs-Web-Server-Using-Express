@@ -153,4 +153,11 @@
 3. cài csurf của express
 4. tạo thêm token để ngăn hacker xâm nhập
 
+## Lesson(23): Install MongoDB
+1. go in Page of [MongoDB](https://www.mongodb.com/)
+2. Chosse `Try Free` or `Get MongoDB` you will come page download.
+3. Chosse `Server` and Download `MongoDB community`
+4. Instal MongoDB Default, Enviroment Variables for link of folder MongoDB
+5. Practice
+
 # Update Content of Git
