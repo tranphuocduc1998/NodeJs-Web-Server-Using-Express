@@ -147,4 +147,10 @@
 5. Listening to port: **$** `npm start`
 7. Practice in folder ~~Lesson(16)-Session~~
 
+## Lesson(22): CSRF Attack
+1. CSRF Attack is Cross-site request forgery
+2. Cách hacker thực hiện: tạo 1 trang web form giống như trang web cần hack, người dùng không để ý sẽ submit thông tin của mình cho hacker. (thường dùng trong chuyển tiền)
+3. cài csurf của express
+4. tạo thêm token để ngăn hacker xâm nhập
+
 # Update Content of Git
