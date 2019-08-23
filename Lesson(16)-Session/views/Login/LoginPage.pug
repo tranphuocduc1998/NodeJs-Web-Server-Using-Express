@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Trang đăng nhập
+  body
+    .container
+      h1 Login
+      form(action="/Login/", method="post")
+        label(for="age") nhập tài khoản:
+        input#age.form-control(type="text", name="account", value= value ? value.account : "")
+        label(for="age") nhập mật khẩu:
+        input#age.form-control(type="password", name="password", value= value ? value.password : "")
+        button.btn.btn-primary.mt-2 Đăng Nhập
+
+      if errors
+        each error in errors
+          .alert.alert-danger(role="alert")= error

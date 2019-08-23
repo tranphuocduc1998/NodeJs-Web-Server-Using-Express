@@ -2,7 +2,7 @@
   "name": "nodejs-web-server-using-express",
   "version": "1.0.0",
   "description": "***Begin Course Nodejs to Express***\r * Create: `npm init`",
-  "main": "Lesson(15)-File-Upload/index.js",
+  "main": "Lesson(16)-Session/index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",

@@ -139,4 +139,12 @@
 6. Listening to port: **$** `npm start`
 7. Practice in folder ~~Lesson(15)-File-Upload~~
 
+## Lesson(21): Session
+1. Create folder `Lesson(16)-Session`
+2. In package.json, edit `"main": "Lesson(16)-Session/index.js",`
+3. In index.js, edit `app.set('views', './Lesson(16)-Session/views')` and `app.use(express.static('LLesson(16)-Session/Assets'))`
+4. In db.js, edit `FileSync('Lesson(16)-Session/db.json')`
+5. Listening to port: **$** `npm start`
+7. Practice in folder ~~Lesson(16)-Session~~
+
 # Update Content of Git

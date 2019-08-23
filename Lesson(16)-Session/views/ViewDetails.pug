@@ -1,0 +1,14 @@
+extends ./Layout/LayoutNavbar.pug
+
+block body
+  .container
+    h3 thông tin id &nbsp
+    input.form-control(type="text", value=info.id, readonly)
+    h3 Tên &nbsp
+    input.form-control(type="text", value=info.displayname, readonly)
+    h3 Tuổi &nbsp
+    input.form-control(type="text", value=info.age, readonly)
+    h3 Tài khoản &nbsp
+    input.form-control(type="text", value=info.account, readonly)
+    h3 Mật Khẩu &nbsp
+    input.form-control(type="password", value=info.password, readonly)

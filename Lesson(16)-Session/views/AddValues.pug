@@ -1,0 +1,18 @@
+extends ./Layout/LayoutNavbar.pug
+
+block body
+  h1 Đây là trang kiểm tra việc dùng thêm dữ liệu
+  form(action="/Additional", method="post")
+    label(for="displayname") nhập tên:
+    input#displayname.form-control(type="text", name='displayname', value= value ? value.displayname : "")
+    label(for="age") nhập tuổi:
+    input#age.form-control(type="number", name="age", value= value ? value.age : "")
+    label(for="age") nhập tài khoản:
+    input#age.form-control(type="text", name="account", value= value ? value.account : "")
+    label(for="age") nhập mật khẩu:
+    input#age.form-control(type="password", name="password", value= value ? value.password : "")
+    button.btn.btn-primary.mt-2 Submit giá trị
+
+  if errors
+    each error in errors
+      .alert.alert-danger(role="alert")= error
