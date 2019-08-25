@@ -6,6 +6,7 @@ const routerIndex = require('./routers/Index.router')
 const routerLogin = require('./routers/Login.router')
 const routerProduct = require('./routers/product.router')
 const routerCart = require('./routers/Cart.router')
+const routerProductApi = require('./api/routers/products.router')
 
 const sessionMiddleware = require('./middleware/Session.middleware')
 
@@ -26,9 +27,9 @@ app.use(sessionMiddleware)
 
 app.use('',routerIndex)
 app.use('/Login', routerLogin)
-app.use('/Product', routerProduct)
+app.use('/Products', routerProduct)
 app.use('/Cart', routerCart)
-
+app.use('/api/Products', routerProductApi)
 app.listen(port, () => console.log('Listening to port:', port))
 
  

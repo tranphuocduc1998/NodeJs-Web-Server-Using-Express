@@ -174,7 +174,7 @@
 11. câu lệnh xóa document: > db.<tên collection>.remove({ whereKey: whereValue, ...})
 12. để tương tác dễ hơn có thể tải robomongo(Robo 3T) công cụ hỗ trợ trực quang mongoDB.
 
-# Lesson(24): Mongoose
+## Lesson(24): Mongoose
 1. Install mongoose: **$** `npm install mongoose --save`
 2. config file db.js in folder `Lesson(17)-Mongoose`
 3. In package.json, edit `"main": "Lesson(17)-Mongoose/index.js",`
@@ -182,5 +182,8 @@
 5. In db.js, edit `FileSync('Lesson(17)-Mongoose/db.json')`
 6. Listening to port: **$** `npm start`
 7. Practice in folder ~~Lesson(17)-Mongoose~~
+
+## Lesson(25): HTTP API
+1. Practice in folder ~~Lesson(17)-Mongoose~~
 
 # Update Content of Git

@@ -3,7 +3,6 @@ const infoContact = require('../models/infoContact.model')
 
 module.exports.index = async function (request, response) {
     const listcontact = await infoContact.find()
-    console.log(listcontact)
     response.render('Index', {
         listcontact: listcontact
     })
