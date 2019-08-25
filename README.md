@@ -186,4 +186,10 @@
 ## Lesson(25): HTTP API
 1. Practice in folder ~~Lesson(17)-Mongoose~~
 
+## Addtional API (REST API)
+1. Get API
+2. Post API
+3. Put API
+4. Patch API
+5. Delete API
 # Update Content of Git
