@@ -1,0 +1,52 @@
+extends ./Layout/LayoutNavbar.pug
+
+block body
+  .row
+    each item in products
+      .col-md-3
+        .card(style='width: 18rem;')
+          img.card-img-top(src=item.image, alt='...')
+          .card-body
+            h5.card-title=item.first_name
+            p.card-text=item.description
+            a.btn.btn-primary(href='/Cart/Add/'+item.id) add to cart
+
+  nav(aria-label='Page navigation example')
+    ul.pagination
+      - if (pageChossed>1)
+        li.page-item
+          a.page-link(href='?page='+(pageChossed-1)) Previous
+      - if(pageChossed<=2)
+        - for (let index = 1; index <=3; index++)
+          - if (index === pageChossed)
+            li.page-item
+              a.blockPage.page-link(href='#')=index
+          - else
+            li.page-item
+              a.page-link(href='?page='+index)=index
+        li.page-item
+          a.page-link(href='#') ...
+      - else if(pageChossed>=(sumPage-1))
+        li.page-item
+          a.page-link(href='#') ...
+        - for (let index = sumPage-2; index <= sumPage; index++)
+          - if (index === pageChossed)
+            li.page-item
+              a.blockPage.page-link(href='#')=index
+          - else
+            li.page-item
+              a.page-link(href='?page='+index)=index
+      - else if(pageChossed>2 && pageChossed < (sumPage-1))
+        li.page-item
+          a.page-link(href='#') ...
+        li.page-item
+          a.page-link(href='?page='+(pageChossed-1))= (pageChossed-1)
+        li.page-item
+          a.blockPage.page-link(href='#')= pageChossed
+        li.page-item
+          a.page-link(href='?page='+(pageChossed+1))= (pageChossed+1)
+        li.page-item
+          a.page-link(href='#') ...
+      - if (pageChossed<sumPage)
+        li.page-item
+          a.page-link(href='?page='+(pageChossed+1)) Next

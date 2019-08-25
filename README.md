@@ -160,4 +160,27 @@
 4. Instal MongoDB Default, Enviroment Variables for link of folder MongoDB
 5. Practice
 
+## Lesson MongoDB
+1. Câu lệnh khởi động Server MongoDB: > mongod
+2. Câu lệnh kết nối client với server: > mongo
+3. Câu lệnh hiển thị danh sách Database hiện có: > show dbs
+4. câu lệnh để chọn database hoặc tạo database mới nếu chưa tồn tại: > use <tên database>
+5. câu lệnh để hiện thị các Collection(tương tự như Table trong SQL) có trong database: > show collections
+6. câu lệnh để tạo Collection: > db.createCollection('<tên collection>')
+7. câu lệnh hiển thị document trong Collection: > db.<tên collection>.find()
+8. câu lệnh tạo document: > db.<tên collection>.insert({ key: value, key2: value2, key3: value3, ....})
+9. câu lệnh tạo nhiều đối tưởng document: > db.<tên collection>.insert([{ key: value, key2: value2, key3: value3, ...}, { key: value, key2: value2, key3: value3, ...}, {...}])
+10. câu lệnh cập nhật document: > db.<tên collection>.update({ whereKey: whereValue, ...}, {$set: {updateKey: updateValue,...}})
+11. câu lệnh xóa document: > db.<tên collection>.remove({ whereKey: whereValue, ...})
+12. để tương tác dễ hơn có thể tải robomongo(Robo 3T) công cụ hỗ trợ trực quang mongoDB.
+
+# Lesson(24): Mongoose
+1. Install mongoose: **$** `npm install mongoose --save`
+2. config file db.js in folder `Lesson(17)-Mongoose`
+3. In package.json, edit `"main": "Lesson(17)-Mongoose/index.js",`
+4. In index.js, edit `app.set('views', './Lesson(17)-Mongoose/views')` and `app.use(express.static('Lesson(17)-Mongoose/Assets'))`
+5. In db.js, edit `FileSync('Lesson(17)-Mongoose/db.json')`
+6. Listening to port: **$** `npm start`
+7. Practice in folder ~~Lesson(17)-Mongoose~~
+
 # Update Content of Git

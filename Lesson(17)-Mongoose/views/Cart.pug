@@ -1,0 +1,14 @@
+extends ./Layout/LayoutNavbar.pug
+
+block body
+  .row
+    each item in products
+      .col-md-3
+        .card(style='width: 18rem;')
+          img.card-img-top(src=item.image, alt='...')
+          .card-body
+            h5.card-title=item.first_name
+              span.badge.badge-secondary.h1= item.productSum
+            p.card-text=item.description
+
+  nav(aria-label='Page navigation example')

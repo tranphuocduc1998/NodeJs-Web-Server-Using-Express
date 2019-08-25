@@ -2,7 +2,7 @@
   "name": "nodejs-web-server-using-express",
   "version": "1.0.0",
   "description": "***Begin Course Nodejs to Express***\r * Create: `npm init`",
-  "main": "Lesson(16)-Session/index.js",
+  "main": "Lesson(17)-Mongoose/index.js",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
@@ -10,6 +10,7 @@
     "express": "^4.17.1",
     "lowdb": "^1.0.0",
     "md5": "^2.2.1",
+    "mongoose": "^5.6.10",
     "multer": "^1.4.2",
     "pug": "^2.0.4",
     "shortid": "^2.2.14"

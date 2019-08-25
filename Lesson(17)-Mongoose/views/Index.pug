@@ -1,0 +1,30 @@
+extends ./Layout/LayoutNavbar.pug
+
+block body
+  h2 Sử dụng form để tìm kiếm giá trị
+  .d-flex.mt-2
+    a(href='/Additional' type='none')
+      button.btn.btn-primary Thêm dữ liệu mới
+    form.form-inline.ml-auto(action="/Search", method="get")
+      input.form-control(type="text", name="contentSearch")
+      button.btn.btn-primary.ml-2  Kiểm tra  
+  table.table.mt-2
+    thread
+      tr
+        th(scope="col") #
+        th(scope="col") Tên
+        th(scope="col") Tuổi
+        th(scope="col") Tài Khoản
+        th(scope="col") Mật Khẩu
+        th(scope="col") xem chi tiết
+    tbody
+    each item in listcontact
+      tr
+        th(scope="row")= item.id
+        th= item.displayname
+        th= item.age
+        th= item.account
+        th= item.password
+        th
+          a(href='/ViewDetails/' + item.id)
+            button.btn.btn-info Details
